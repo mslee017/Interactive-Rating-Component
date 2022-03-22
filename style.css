@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Overpass;
+  color: hsl(0, 0%, 100%);
+  background: hsl(216, 12%, 8%);
+}
+
+p {
+  font-size: 15px;
+}
+
+.container {
+  max-width: 325px;
+  margin: 150px auto;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.title-header {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.star-circle {
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 25%);
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.description-paragraph {
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: hsl(216, 12%, 54%);
+  text-align: left;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 25%);
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  color: hsl(216, 12%, 54%);
+  font-weight: 700;
+}
+
+.circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.submit-clicked {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.illustration-image {
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.printed-result,
+.thank-you,
+.thank-you-paragraph {
+  text-align: center;
+}
+
+.thank-you {
+  margin-bottom: 20px;
+}
+
+.printed-result-container {
+  margin: 0 auto 20px auto;
+  background-color: hsl(213, 19%, 25%);
+  padding: 7px;
+  border-radius: 15px;
+  max-width: 175px;
+}
+
+.printed-result {
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you-paragraph {
+  line-height: 1.65;
+  color: hsl(216, 12%, 54%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .thank-you-paragraph {
+    margin-bottom: 45px;
+    font-size: 16px;
+  }
+}

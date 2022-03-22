@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="container rating-card">
+      <div class="star-circle">
+        <svg
+          width="17"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          class="star-icon"
+        >
+          <path
+            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+            fill="#FC7614"
+          />
+        </svg>
+      </div>
+
+      <h1 class="title-header">How did we do?</h1>
+
+      <p class="description-paragraph">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+
+      <div class="circle-container">
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <div class="circle">5</div>
+      </div>
+      <form action="#">
+        <button class="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="container hidden thank-you-card">
+      <img
+        class="illustration-image"
+        src="/images/illustration-thank-you.svg"
+        alt=""
+      />
+      <div class="printed-result-container">
+        <p class="printed-result"></p>
+      </div>
+
+      <h1 class="thank-you">Thank you!</h1>
+
+      <p class="thank-you-paragraph">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- Thank you state end -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Matt Lee</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
